@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex AI Privacy | Secure Offline AI Infrastructure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0c10;
+            --bg-card: #13171f;
+            --accent-blue: #007aff;
+            --security-green: #00ff9d;
+            --text-main: #e0e6ed;
+            --text-dim: #94a3b8;
+            --border: #232936;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .mono { font-family: 'JetBrains Mono', monospace; color: var(--security-green); font-size: 0.9rem; }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #111d2e 0%, #0a0c10 70%);
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hero-subtext {
+            color: var(--text-dim);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .btn:hover {
+            background: transparent;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 20px rgba(0, 122, 255, 0.3);
+        }
+
+        /* Section Layout */
+        section {
+            padding: 100px 0;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        /* Cards Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            padding: 2.5rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--security-green);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: var(--text-dim);
+        }
+
+        /* Pricing Table */
+        .pricing-card {
+            text-align: center;
+            border: 1px solid var(--border);
+            padding: 3rem 2rem;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .features-list {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+            color: var(--text-dim);
+        }
+
+        .features-list li::before {
+            content: "✓";
+            color: var(--security-green);
+            margin-right: 10px;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            background: #1c222d;
+            border: 1px solid var(--border);
+            color: white;
+            border-radius: 4px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            section { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <p class="mono">STATUS: SECURE ENCLAVE ACTIVE</p>
+            <h1>Stop Leaking Your Clients' Data to Public AI.</h1>
+            <p class="hero-subtext">We deploy enterprise-grade AI "Cleanrooms" directly on your hardware. Professional intelligence without the third-party risk.</p>
+            <a href="#contact" class="btn">Initialize Audit</a>
+        </div>
+    </header>
+
+    <section id="problem">
+        <div class="container">
+            <h2>The Risk of Public Intelligence</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="mono" style="margin-bottom: 10px;">[ERR_DATA_LEAK]</div>
+                    <h3>Data Exposure</h3>
+                    <p>Standard AI models train on your prompts. Every confidential legal brief or medical record you upload becomes part of a public dataset.</p>
+                </div>
+                <div class="card">
+                    <div class="mono" style="margin-bottom: 10px;">[ERR_LEGAL_LIABILITY]</div>
+                    <h3>Lawsuits & Non-Compliance</h3>
+                    <p>Using cloud-based AI for PII (Personally Identifiable Information) violates HIPAA and Attorney-Client privilege mandates.</p>
+                </div>
+                <div class="card">
+                    <div class="mono" style="margin-bottom: 10px;">[ERR_INTEL_LOSS]</div>
+                    <h3>Lost Secrets</h3>
+                    <p>Proprietary strategies and internal documentation are indexed by third-party providers, compromising your firm's competitive edge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #0f1218;">
+        <div class="container">
+            <h2>The Apex Cleanroom</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 style="color: var(--security-green);">100% Offline</h3>
+                    <p>Our models run on your local servers. No internet connection is required for the AI to function, ensuring a physical "air-gap."</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--security-green);">Zero Retention</h3>
+                    <p>Data never leaves your premises. We implement hardware-level encryption that clears session memory the moment you log off.</p>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--security-green);">Client-Grade Security</h3>
+                    <p>Custom-tuned for law and medicine. High-precision models that understand industry terminology without external "hallucinations."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Infrastructure Tiers</h2>
+            <div class="grid">
+                <div class="pricing-card card">
+                    <p class="mono">THE AUDITOR</p>
+                    <div class="price">Discovery</div>
+                    <p>Security assessment of current AI usage and vulnerability mapping.</p>
+                    <ul class="features-list">
+                        <li>Data Flow Analysis</li>
+                        <li>Compliance Audit</li>
+                        <li>Risk Mitigation Roadmap</li>
+                    </ul>
+                    <a href="#contact" class="btn" style="background: transparent; border: 1px solid var(--border);">Enquire</a>
+                </div>
+                <div class="pricing-card card" style="border-color: var(--accent-blue);">
+                    <p class="mono">THE SHIELD</p>
+                    <div class="price">Cleanroom</div>
+                    <p>Full deployment of a private, offline LLM on single-node hardware.</p>
+                    <ul class="features-list">
+                        <li>On-site Hardware Setup</li>
+                        <li>Private Llama/Mistral Model</li>
+                        <li>Local Knowledge Retrieval</li>
+                    </ul>
+                    <a href="#contact" class="btn">Deploy Now</a>
+                </div>
+                <div class="pricing-card card">
+                    <p class="mono">THE FORTRESS</p>
+                    <div class="price">Enterprise</div>
+                    <p>Multi-departmental secure AI grid for high-volume firms.</p>
+                    <ul class="features-list">
+                        <li>Clustered GPU Compute</li>
+                        <li>Custom Fine-tuning</li>
+                        <li>24/7 Hardened Support</li>
+                    </ul>
+                    <a href="#contact" class="btn" style="background: transparent; border: 1px solid var(--border);">Enquire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2 style="margin-bottom: 1rem; text-align: left;">Request a Privacy Audit</h2>
+                <p style="color: var(--text-dim); margin-bottom: 2rem;">Secure your infrastructure today. All inquiries are handled via encrypted channels.</p>
+                <form id="auditForm">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Professional Email" required>
+                    <textarea rows="5" placeholder="Briefly describe your current data environment..."></textarea>
+                    <button type="submit" class="btn" style="width: 100%; cursor: pointer; border: none;">Submit Secure Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Apex AI Privacy Systems. All data processed locally. <span style="color: var(--security-green);">● System Online</span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('auditForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your request has been encrypted and sent. A privacy specialist will contact you within 24 hours.');
+            this.reset();
+        });
+
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+  </html>
+  
